@@ -55,7 +55,7 @@ graph TD
         Memory[(Telemetry DB)]
     end
 
-    subgraph "Specialized Workers"
+    subgraph Workers ["Specialized Workers"]
         HippoRAG[HippoRAG - Understanding]
         SBFL[Ochiai - Debugging]
         Z3[Z3 - Verification]
@@ -65,7 +65,7 @@ graph TD
     User --> IDE --> Orchestrator
     PLAN <--> Orchestrator
     Orchestrator <--> Blackboard
-    Orchestrator --> "Specialized Workers"
+    Orchestrator --> Workers
 ```
 
 ---
