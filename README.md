@@ -30,9 +30,9 @@ Swarm was born from the realization that while LLMs are powerful, they lack the 
 Watch Swarm autonomously analyze a project and sync its brain with the codebase in real-time.
  
 <div align="center">
-  <a href="https://example.com/swarm-demo">
-    <img src="images/demo_thumbnail.png" alt="Swarm Demo Video" width="600"/>
-  </a>
+  <video src="media/swarm-demo.mp4" width="800" controls>
+    Your browser does not support the video tag.
+  </video>
 </div>
 
 ---
