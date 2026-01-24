@@ -30,9 +30,7 @@ Swarm was born from the realization that while LLMs are powerful, they lack the 
 Watch Swarm autonomously analyze a project and sync its brain with the codebase in real-time.
  
 <div align="center">
-  <video src="media/swarm-demo.mp4" width="800" controls>
-    Your browser does not support the video tag.
-  </video>
+  <iframe src="https://player.vimeo.com/video/1158005784" width="800" height="450" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
 </div>
 
 ---
