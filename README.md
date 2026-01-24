@@ -65,7 +65,7 @@ graph TD
     User --> IDE --> Orchestrator
     PLAN <--> Orchestrator
     Orchestrator <--> Blackboard
-    Orchestrator --> Specialized Workers
+    Orchestrator --> "Specialized Workers"
 ```
 
 ---
