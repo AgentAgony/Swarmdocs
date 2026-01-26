@@ -1,6 +1,6 @@
 # Decision Logic
 
-How Swarm decides what to do with your request.
+How Vexorbis decides what to do with your request.
 
 ## The Routing Flow
 
@@ -34,7 +34,7 @@ flowchart TD
 
 ## Algorithm Dispatch (Priority Order)
 
-Before using an LLM, Swarm checks for specialized algorithms:
+Before using an LLM, Vexorbis checks for specialized algorithms:
 
 | Priority | Flag | Algorithm | What It Does |
 |:--------:|------|-----------|--------------|
@@ -49,7 +49,7 @@ Before using an LLM, Swarm checks for specialized algorithms:
 
 ## LLM Router
 
-When no algorithm matches, Swarm uses a **Gemini-First Cascade**:
+When no algorithm matches, Vexorbis uses a **Gemini-First Cascade**:
 
 ```
 1. gemini-3-flash-preview  (Primary - fastest)
@@ -71,7 +71,7 @@ Use aliases to route to local models:
 
 ## Role Selection
 
-When the LLM handles a task, Swarm assigns a persona:
+When the LLM handles a task, Vexorbis assigns a persona:
 
 | Condition | Role | Focus |
 |-----------|------|-------|

@@ -1,21 +1,21 @@
 # Using PLAN.md
 
-Control Swarm agents through a simple Markdown file.
+Control Vexorbis agents through a simple Markdown file.
 
 ## Overview
 
-`PLAN.md` is a bi-directional interface between you and Swarm:
+`PLAN.md` is a bi-directional interface between you and Vexorbis:
 
 ```mermaid
 sequenceDiagram
     participant You
     participant PLAN.md
-    participant Swarm
+    participant Vexorbis
     
     You->>PLAN.md: Write tasks
-    PLAN.md->>Swarm: Sync inbound
-    Swarm->>Swarm: Execute
-    Swarm->>PLAN.md: Mark complete
+    PLAN.md->>Vexorbis: Sync inbound
+    Vexorbis->>Vexorbis: Execute
+    Vexorbis->>PLAN.md: Mark complete
     You->>PLAN.md: See results
 ```
 
@@ -42,10 +42,10 @@ Place `PLAN.md` in your project root or at `docs/ai/PLAN.md`.
 
 | Marker | Status | Meaning |
 |--------|--------|---------|
-| `[ ]` | PENDING | Swarm will pick this up |
+| `[ ]` | PENDING | Vexorbis will pick this up |
 | `[/]` | IN_PROGRESS | Currently being worked |
-| `[x]` | COMPLETED | Done (Swarm marks this) |
-| `[-]` | SKIPPED | Ignored by Swarm |
+| `[x]` | COMPLETED | Done (Vexorbis marks this) |
+| `[-]` | SKIPPED | Ignored by Vexorbis |
 
 ## Role Assignment
 

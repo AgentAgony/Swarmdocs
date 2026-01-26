@@ -1,6 +1,6 @@
 # Architecture Overview
 
-Swarm is a Python-native MCP server that combines state management, algorithmic reasoning, and autonomous workflows.
+Vexorbis is a Python-native MCP server that combines state management, algorithmic reasoning, and autonomous workflows.
 
 ## System Diagram
 
@@ -19,7 +19,7 @@ graph TD
     subgraph "Core Engine"
         Orchestrator[Orchestrator Loop]
         Blackboard[(Blackboard<br/>project_profile.json)]
-        SQLite[(Telemetry DB<br/>~/.swarm/telemetry.db)]
+        SQLite[(Telemetry DB<br/>~/.vexorbis/telemetry.db)]
         Postgres[(PostgreSQL<br/>Optional)]
     end
 
@@ -83,13 +83,13 @@ The shared state file containing:
 ### Sync Engine (`mcp_core/sync/`)
 
 Bi-directional synchronization between `PLAN.md` and the Blackboard:
-- **Inbound**: Human edits PLAN.md → Updates Swarm tasks
+- **Inbound**: Human edits PLAN.md → Updates Vexorbis tasks
 - **Outbound**: Agent completes work → Marks tasks `[x]` in PLAN.md
 
 ## File Structure
 
 ```
-swarm/
+vexorbis/
 ├── server.py                 # FastMCP Server Entrypoint
 ├── Dockerfile                # Python 3.11 Slim Image
 ├── project_profile.json      # The Blackboard (State)
@@ -98,7 +98,7 @@ swarm/
 │   ├── orchestrator_loop.py  # Main Event Loop
 │   ├── llm.py                # Gemini Router & Fallback Logic
 │   ├── search_engine.py      # Hybrid Search & Indexing
-│   ├── swarm_schemas.py      # Pydantic State Models
+│   ├── vexorbis_schemas.py      # Pydantic State Models
 │   ├── postgres_client.py    # Optional SQL Persistence
 │   │
 │   ├── algorithms/

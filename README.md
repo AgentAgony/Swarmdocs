@@ -1,7 +1,7 @@
 <div align="center">
-  <img src="/images/swarm_logo.png" alt="Swarm Logo" width="200"/>
+  <img src="/images/favicon-96x96.png" alt="Vexorbis Logo" width="200"/>
 
-  ### Build faster with Swarm
+  ### Build faster with Vexorbis
 
   [![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
   [![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://docker.com)
@@ -14,30 +14,20 @@
 
 ## 🚀 The Vision
 
-**Swarm** is a high-performance squad of specialized AI agents that live inside your IDE. It uses algorithms to find bugs, audit your Git flow, and verify logic before you even hit save. It handles the grunt work so you can focus on building software.
+**Vexorbis** is a high-performance squad of specialized AI agents that live inside your IDE. It uses algorithms to find bugs, audit your Git flow, and verify logic before you even hit save. It handles the grunt work so you can focus on building software.
 
 ### Origins & Inspiration
 
-Swarm was born from the realization that while LLMs are powerful, they lack the deterministic rigor required for professional software engineering. Inspired by the orchestration patterns of OpenAI's original Swarm research, we've evolved those concepts into a production-ready workforce that combines:
+Vexorbis was born from the realization that while LLMs are powerful, they lack the deterministic rigor required for professional software engineering. Inspired by the orchestration patterns of OpenAI's original Swarm research, we've evolved those concepts into a production-ready workforce that combines:
 - **Algorithmic Precision**: AST analysis, formal verification, and statistical debugging.
 - **Autonomous Workflows**: Self-driven Git management and task synchronization.
 - **Stateful Memory**: Context that survives across sessions and agents.
 
 ---
 
-## 📺 See it in action
- 
-Watch Swarm autonomously analyze a project and sync its brain with the codebase in real-time.
- 
-<div align="center">
-  <iframe src="https://player.vimeo.com/video/1158005784" width="800" height="450" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
-</div>
-
----
-
 ## 🏗️ Core Architecture
 
-Swarm operates as a centralized **Orchestrator** that coordinates a decentralized squad of **Algorithmic Workers**.
+Vexorbis operates as a centralized **Orchestrator** that coordinates a decentralized squad of **Algorithmic Workers**.
 
 ```mermaid
 graph TD
@@ -47,7 +37,7 @@ graph TD
         PLAN[PLAN.md]
     end
 
-    subgraph "Swarm Engine"
+    subgraph "Vexorbis Engine"
         Orchestrator[Orchestrator Loop]
         Blackboard[(Blackboard)]
         Memory[(Telemetry DB)]
@@ -78,7 +68,7 @@ graph TD
 
 ## 🤖 Specialized Workforce
 
-Swarm assigns roles based on the task at hand. You can trigger them directly in your `PLAN.md` using flags.
+Vexorbis assigns roles based on the task at hand. You can trigger them directly in your `PLAN.md` using flags.
 
 | Role | Trigger Flag | Responsibility |
 | :--- | :--- | :--- |
@@ -120,4 +110,4 @@ Check out the [Contributor Guide](CONTRIBUTING.md).
 
 ## 📜 License
 
-Swarm is MIT Licensed. Build something cool.
+Vexorbis is MIT Licensed. Build something cool.

@@ -1,6 +1,6 @@
-# Contributing to Swarm
+# Contributing to Vexorbis
 
-We love your input! We want to make contributing to Swarm as easy and transparent as possible, whether it's:
+We love your input! We want to make contributing to Vexorbis as easy and transparent as possible, whether it's:
 
 - Reporting a bug
 - Discussing the current state of the code

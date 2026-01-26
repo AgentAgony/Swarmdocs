@@ -1,6 +1,6 @@
 # Tools Reference
 
-Complete reference for all Swarm MCP tools.
+Complete reference for all Vexorbis MCP tools.
 
 ## Search Tools
 
@@ -177,7 +177,7 @@ get_pr_template(type: str = "default") -> str
 
 ### restart_server
 
-Restart Swarm to load new tools.
+Restart Vexorbis to load new tools.
 
 ```python
 restart_server(reason: str) -> str

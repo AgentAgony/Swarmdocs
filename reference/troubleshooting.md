@@ -9,7 +9,7 @@ Common issues and solutions.
 **Symptom:** `docker compose up` fails or container exits immediately.
 
 **Solutions:**
-1. Check logs: `docker logs swarm-mcp-server`
+1. Check logs: `docker logs vexorbis-mcp-server`
 2. Verify API keys are set: `echo $GEMINI_API_KEY`
 3. Rebuild: `docker compose down && docker compose up -d --build`
 
@@ -37,12 +37,12 @@ lsof -i :8000                  # Linux/Mac
 
 ## Connection Issues
 
-### IDE not connecting to Swarm
+### IDE not connecting to Vexorbis
 
 **Symptom:** MCP tools not appearing in IDE.
 
 **Checklist:**
-1. Container running? `docker ps | grep swarm`
+1. Container running? `docker ps | grep vexorbis`
 2. Correct config path? Check IDE's MCP settings file
 3. Restart IDE after config change
 4. Check Docker logs for startup errors
@@ -53,7 +53,7 @@ lsof -i :8000                  # Linux/Mac
 
 **Solutions:**
 1. Check container is running
-2. Verify port mapping: `docker port swarm-mcp-server`
+2. Verify port mapping: `docker port vexorbis-mcp-server`
 3. Try `127.0.0.1` instead of `localhost`
 
 ## LLM Issues
@@ -75,7 +75,7 @@ docker compose restart
 
 **Solutions:**
 1. Wait and retry (exponential backoff built-in)
-2. Use fallback: Swarm cascades to other models
+2. Use fallback: Vexorbis cascades to other models
 3. Consider local LLM: `ollama/llama3`
 
 ### Slow responses
@@ -101,9 +101,9 @@ docker compose restart
 **Cause:** Strict Git Mode (default).
 
 **Solutions:**
-1. Let Swarm commit: It will auto-commit
+1. Let Vexorbis commit: It will auto-commit
 2. Commit manually: `git add . && git commit -m "..."`
-3. Disable strict mode: `SWARM_STRICT_GIT=false`
+3. Disable strict mode: `VEXORBIS_STRICT_GIT=false`
 
 ### GitHub API errors
 
@@ -112,7 +112,7 @@ docker compose restart
 **Checklist:**
 1. Token set? `echo $GITHUB_TOKEN`
 2. Token has correct scopes? (repo, issues, pull_request)
-3. Rate limited? Check `docker logs swarm-mcp-server`
+3. Rate limited? Check `docker logs vexorbis-mcp-server`
 
 ## Search Issues
 
@@ -146,14 +146,15 @@ docker compose restart
 docker compose restart
 
 # Or manually clear locks (last resort)
-rm ~/.swarm/telemetry.db-journal
+rm ~/.vexorbis/telemetry.db-journal
 ```
 
 ### Telemetry DB growing too large
 
-**Symptom:** Slow startup, large `~/.swarm/telemetry.db`.
+**Symptom:** Slow startup, large `~/.vexorbis/telemetry.db`.
 
-**Solution:** Swarm auto-prunes events >30 days. For manual cleanup:
+
+**Solution:** Vexorbis auto-prunes events >30 days. For manual cleanup:
 ```python
 from mcp_core.telemetry.telemetry_analytics import TelemetryAnalyticsService
 analytics = TelemetryAnalyticsService()
@@ -163,9 +164,9 @@ analytics.optimize_database()
 
 ## Getting Help
 
-1. **Check logs:** `docker logs swarm-mcp-server`
-2. **Enable debug:** `SWARM_DEBUG=true`
-3. **GitHub Issues:** [AgentAgony/swarm/issues](https://github.com/AgentAgony/swarm/issues)
+1. **Check logs:** `docker logs vexorbis-mcp-server`
+2. **Enable debug:** `VEXORBIS_DEBUG=true`
+3. **GitHub Issues:** [AgentAgony/vexorbis/issues](https://github.com/AgentAgony/vexorbis/issues)
 
 ---
 

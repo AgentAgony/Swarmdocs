@@ -1,10 +1,10 @@
 # Creating Custom Tools
 
-Extend Swarm with new capabilities at runtime.
+Extend Vexorbis with new capabilities at runtime.
 
 ## Overview
 
-Swarm's Dynamic Toolsmith allows agents to create new MCP tools without restarting the entire system.
+Vexorbis's Dynamic Toolsmith allows agents to create new MCP tools without restarting the entire system.
 
 ## Creating a Tool
 
@@ -122,7 +122,7 @@ def register(mcp: FastMCP):
 
 ## Security Considerations
 
-- Tools run with the same permissions as Swarm
+- Tools run with the same permissions as Vexorbis
 - Code is validated for the `register` function
 - User approval is required for `restart_server`
 
@@ -130,12 +130,12 @@ def register(mcp: FastMCP):
 
 Enable verbose logging:
 ```bash
-export SWARM_DEBUG=true
+export VEXORBIS_DEBUG=true
 ```
 
 View tool loading:
 ```bash
-docker logs swarm-mcp-server 2>&1 | grep "tool"
+docker logs vexorbis-mcp-server 2>&1 | grep "tool"
 ```
 
 ---

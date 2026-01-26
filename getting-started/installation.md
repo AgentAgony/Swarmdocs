@@ -1,6 +1,6 @@
 # Installation
 
-Get Swarm up and running in minutes.
+Get Vexorbis up and running in minutes.
 
 ## Prerequisites
 
@@ -19,7 +19,7 @@ The fastest way to get started:
 
 ```bash
 # Request access via the website
-cd swarm
+cd vexorbis
 
 # Start the server
 docker compose up -d --build
@@ -27,8 +27,8 @@ docker compose up -d --build
 
 Verify it's running:
 ```bash
-docker ps | grep swarm
-# Should show: swarm-mcp-server
+docker ps | grep vexorbis
+# Should show: vexorbis-mcp-server
 ```
 
 ## Manual Installation
@@ -37,7 +37,7 @@ For development or customization:
 
 ```bash
 # After receiving access, clone and setup
-cd swarm
+cd vexorbis
 
 # Create virtual environment
 python -m venv .venv
@@ -55,7 +55,7 @@ python server.py
 
 ## IDE Configuration
 
-Add Swarm to your IDE's MCP configuration.
+Add Vexorbis to your IDE's MCP configuration.
 
 ### Antigravity
 
@@ -64,9 +64,9 @@ Edit `~/.antigravity/settings.json`:
 ```json
 {
   "mcpServers": {
-    "swarm-orchestrator": {
+    "vexorbis-orchestrator": {
       "command": "docker",
-      "args": ["exec", "-i", "swarm-mcp-server", "fastmcp", "run", "server.py"]
+      "args": ["exec", "-i", "vexorbis-mcp-server", "fastmcp", "run", "server.py"]
     }
   }
 }
@@ -79,9 +79,9 @@ Edit `~/.cursor/mcp.json`:
 ```json
 {
   "servers": {
-    "swarm": {
+    "vexorbis": {
       "command": "docker",
-      "args": ["exec", "-i", "swarm-mcp-server", "fastmcp", "run", "server.py"]
+      "args": ["exec", "-i", "vexorbis-mcp-server", "fastmcp", "run", "server.py"]
     }
   }
 }
@@ -95,11 +95,11 @@ In your IDE, try using the `search_codebase` tool:
 Search for "authentication" in this project
 ```
 
-If Swarm responds with code results, you're ready!
+If Vexorbis responds with code results, you're ready!
 
 ---
 
 ## Next Steps
 
-- [Quick Start](./quickstart.md) — Run your first Swarm task
-- [Configuration](../reference/configuration.md) — Customize Swarm's behavior
+- [Quick Start](./quickstart.md) — Run your first Vexorbis task
+- [Configuration](../reference/configuration.md) — Customize Vexorbis's behavior

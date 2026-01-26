@@ -1,16 +1,16 @@
 # API Reference
 
-Programmatic interfaces for integrating with Swarm.
+Programmatic interfaces for integrating with Vexorbis.
 
 ## MCP Protocol
 
-Swarm implements the Model Context Protocol (MCP) specification.
+Vexorbis implements the Model Context Protocol (MCP) specification.
 
 ### Connection
 
 **Stdio (Docker):**
 ```bash
-docker exec -i swarm-mcp-server fastmcp run server.py
+docker exec -i vexorbis-mcp-server fastmcp run server.py
 ```
 
 **Direct (Development):**
@@ -48,7 +48,7 @@ from mcp_core.orchestrator_loop import Orchestrator
 orch = Orchestrator(root_path=".", session_id="my-session")
 
 # Add a task
-from mcp_core.swarm_schemas import Task
+from mcp_core.vexorbis_schemas import Task
 task = Task(
     description="Refactor authentication",
     assigned_worker="engineer"
@@ -123,7 +123,7 @@ from mcp_core.sync.sync_engine import SyncEngine
 
 sync = SyncEngine(root_path=".")
 
-# Read PLAN.md into state
+# Inbound: Human edits PLAN.md → Updates Vexorbis tasks
 sync.sync_inbound(state)
 
 # Write state back to PLAN.md
@@ -135,7 +135,7 @@ sync.sync_outbound(state)
 ### Task
 
 ```python
-from mcp_core.swarm_schemas import Task
+from mcp_core.vexorbis_schemas import Task
 
 task = Task(
     description="Add user validation",
@@ -157,7 +157,7 @@ Key fields:
 The main state container:
 
 ```python
-from mcp_core.swarm_schemas import ProjectProfile
+from mcp_core.vexorbis_schemas import ProjectProfile
 
 profile = ProjectProfile()
 profile.add_task(task)

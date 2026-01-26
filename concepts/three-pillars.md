@@ -1,6 +1,6 @@
 # The Three Pillars
 
-Swarm is built on three core design principles that differentiate it from simple LLM wrappers.
+Vexorbis is built on three core design principles that differentiate it from simple LLM wrappers.
 
 ---
 
@@ -8,7 +8,7 @@ Swarm is built on three core design principles that differentiate it from simple
 
 > **Go beyond text search. Use deterministic algorithms for reliability.**
 
-Instead of asking an LLM to "find bugs" or "understand code," Swarm uses specialized algorithms:
+Instead of asking an LLM to "find bugs" or "understand code," Vexorbis uses specialized algorithms:
 
 ### HippoRAG — Code Understanding
 
@@ -62,7 +62,7 @@ Symbolic execution using the Z3 SMT solver:
 
 ### Dynamic Toolsmith
 
-Swarm can create new tools at runtime:
+Vexorbis can create new tools at runtime:
 
 ```python
 create_tool_file(
@@ -91,7 +91,7 @@ Control agents via `PLAN.md`:
 
 ### Telemetry Memory
 
-SQLite-backed persistence (`~/.swarm/telemetry.db`):
+SQLite-backed persistence (`~/.vexorbis/telemetry.db`):
 - Session context survives restarts
 - Decision history for debugging
 - Tool performance metrics

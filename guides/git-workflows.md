@@ -1,6 +1,6 @@
 # Autonomous Git Workflows
 
-Swarm can manage your Git workflow autonomously.
+Vexorbis can manage your Git workflow autonomously.
 
 ## Overview
 
@@ -72,7 +72,7 @@ Handles:
 
 ## Strict Git Mode
 
-**Default:** `SWARM_STRICT_GIT=true`
+**Default:** `VEXORBIS_STRICT_GIT=true`
 
 Prevents "dirty state" completion:
 
@@ -88,13 +88,13 @@ flowchart LR
 **Rule:** A task cannot be marked COMPLETED with uncommitted changes.
 
 **Behavior:**
-1. Swarm reverts status to PENDING
+1. Vexorbis reverts status to PENDING
 2. Triggers Git Agent to commit
 3. Then marks COMPLETED
 
 ## Commit Message Generation
 
-Swarm generates Conventional Commits:
+Vexorbis generates Conventional Commits:
 
 ```
 feat(auth): add password hashing
@@ -119,7 +119,7 @@ Examples:
 
 ## GitHub Integration
 
-With `GITHUB_TOKEN` set, Swarm can:
+With `GITHUB_TOKEN` set, Vexorbis can:
 - Create issues and PRs
 - Apply labels
 - Request reviewers

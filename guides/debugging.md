@@ -32,7 +32,7 @@ suspiciousness = failed(line) / sqrt(total_failed * (failed(line) + passed(line)
 
 ### Automatic
 
-When Swarm detects failing tests:
+When Vexorbis detects failing tests:
 ```markdown
 - [ ] Fix authentication bug @debugger
   - Flags: tests_failing=True
@@ -47,7 +47,7 @@ My tests are failing, help me find the bug
 ### Environment Flag
 
 ```bash
-export SWARM_SBFL_ENABLED=true
+export VEXORBIS_SBFL_ENABLED=true
 ```
 
 ## Reading the Report
@@ -74,7 +74,7 @@ Top 5 Most Suspicious Lines:
 
 1. **Tests fail:** `pytest` shows 3 failures
 2. **Request help:** "Debug my failing tests"
-3. **Swarm runs Ochiai:** Analyzes coverage
+3. **Vexorbis runs Ochiai:** Analyzes coverage
 4. **Get report:** Lines 47 and 52 are most suspicious
 5. **Focus there:** Agent examines those specific lines
 6. **Find bug:** Plaintext password comparison on line 47
@@ -103,5 +103,5 @@ Set the test command if not using pytest:
 
 ## Next Steps
 
-- [Creating Custom Tools](./custom-tools.md) — Extend Swarm
+- [Creating Custom Tools](./custom-tools.md) — Extend Vexorbis
 - [Troubleshooting](../reference/troubleshooting.md) — Common issues

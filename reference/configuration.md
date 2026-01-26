@@ -1,6 +1,6 @@
 # Configuration
 
-All environment variables and settings for Swarm.
+All environment variables and settings for Vexorbis.
 
 ## Required Variables
 
@@ -26,30 +26,30 @@ At least one LLM key is required for full functionality.
 | Variable | Default | Description |
 |----------|---------|-------------|
 | `GITHUB_TOKEN` | - | GitHub Personal Access Token |
-| `SWARM_STRICT_GIT` | `true` | Enforce commit before task completion |
+| `VEXORBIS_STRICT_GIT` | `true` | Enforce commit before task completion |
 
 ### Debugging
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `SWARM_DEBUG` | `false` | Enable verbose logging |
-| `SWARM_TRACE_PROMPTS` | `false` | Log LLM prompts (truncated) |
-| `SWARM_VERBOSE_TELEMETRY` | `false` | Detailed telemetry output |
-| `SWARM_SBFL_ENABLED` | `false` | Enable Ochiai fault localization |
+| `VEXORBIS_DEBUG` | `false` | Enable verbose logging |
+| `VEXORBIS_TRACE_PROMPTS` | `false` | Log LLM prompts (truncated) |
+| `VEXORBIS_VERBOSE_TELEMETRY` | `false` | Detailed telemetry output |
+| `VEXORBIS_SBFL_ENABLED` | `false` | Enable Ochiai fault localization |
 
 ### Internal Tools
 
 | Variable | Default | Description |
 |----------|---------|-------------|
-| `SWARM_INTERNAL_TOOLS` | `false` | Load debug/maintenance tools |
+| `VEXORBIS_INTERNAL_TOOLS` | `false` | Load debug/maintenance tools |
 
 ### Database
 
 | Variable | Default | Description |
 |----------|---------|-------------|
 | `POSTGRES_URL` | - | PostgreSQL connection URL for session persistence |
-| `SWARM_SESSION_ID` | auto-generated | Override session identifier |
-| `SWARM_AGENT_ID` | auto-generated | Override agent identifier |
+| `VEXORBIS_SESSION_ID` | auto-generated | Override session identifier |
+| `VEXORBIS_AGENT_ID` | auto-generated | Override agent identifier |
 
 ## Configuration Files
 
@@ -87,14 +87,14 @@ See [Using PLAN.md](../guides/plan-syntax.md) for syntax.
 
 ```yaml
 services:
-  swarm:
+  vexorbis:
     environment:
       - GEMINI_API_KEY=${GEMINI_API_KEY}
       - GITHUB_TOKEN=${GITHUB_TOKEN}
-      - SWARM_DEBUG=true
+      - VEXORBIS_DEBUG=true
     volumes:
       - ./:/app
-      - ~/.swarm:/root/.swarm  # Persist telemetry DB
+      - ~/.vexorbis:/root/.vexorbis  # Persist telemetry DB
 ```
 
 ### Resource Limits

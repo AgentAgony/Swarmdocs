@@ -1,6 +1,6 @@
 # Quick Start
 
-Get productive with Swarm in 5 minutes.
+Get productive with Vexorbis in 5 minutes.
 
 ## Step 1: Search Your Codebase
 
@@ -10,7 +10,7 @@ Try the hybrid search tool:
 Find all functions that handle user authentication
 ```
 
-**What happens:** Swarm uses HippoRAG's AST graph to find semantically related code, not just text matches.
+**What happens:** Vexorbis uses HippoRAG's AST graph to find semantically related code, not just text matches.
 
 ## Step 2: Create a PLAN.md
 
@@ -25,9 +25,9 @@ Create a `PLAN.md` file in your project root:
 - [ ] Review authentication security @auditor
 ```
 
-**What happens:** Swarm reads this file and treats each `[ ]` item as a pending task.
+**What happens:** Vexorbis reads this file and treats each `[ ]` item as a pending task.
 
-## Step 3: Let Swarm Work
+## Step 3: Let Vexorbis Work
 
 Tell your AI assistant:
 
@@ -36,7 +36,7 @@ Process the next pending task from PLAN.md
 ```
 
 **What happens:**
-1. Swarm picks up the first `[ ]` task
+1. Vexorbis picks up the first `[ ]` task
 2. Assigns it to the `@engineer` role
 3. Pre-loads `login.py` into context
 4. Executes the task
@@ -44,7 +44,7 @@ Process the next pending task from PLAN.md
 
 ## Step 4: Auto-Commit Changes
 
-If you have uncommitted changes, Swarm can commit them:
+If you have uncommitted changes, Vexorbis can commit them:
 
 ```
 Commit my changes with an appropriate message
@@ -64,9 +64,9 @@ My tests are failing, help me debug
 
 ---
 
-## What Swarm Did
+## What Vexorbis Did
 
-| You Said | Swarm Used |
+| You Said | Vexorbis Used |
 |----------|------------|
 | "Find functions..." | HippoRAG (semantic search) |
 | "Process task..." | Role Dispatch (Engineer) |
@@ -77,4 +77,4 @@ My tests are failing, help me debug
 
 - [Using PLAN.md](../guides/plan-syntax.md) — Full syntax reference
 - [Tools Reference](../reference/tools.md) — All available tools
-- [Decision Logic](../concepts/decision-logic.md) — How Swarm chooses what to do
+- [Decision Logic](../concepts/decision-logic.md) — How Vexorbis chooses what to do
