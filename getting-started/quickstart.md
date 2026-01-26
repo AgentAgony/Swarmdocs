@@ -29,7 +29,7 @@ Create a `PLAN.md` file in your project root:
 
 ## Step 3: Let Vexorbis Work
 
-Tell your AI assistant:
+Tell your AI:
 
 ```
 Process the next pending task from PLAN.md
@@ -38,11 +38,11 @@ Process the next pending task from PLAN.md
 **What happens:**
 1. Vexorbis picks up the first `[ ]` task
 2. Assigns it to the `@engineer` role
-3. Pre-loads `login.py` into context
+3. Pre loads `login.py` into context
 4. Executes the task
 5. Marks it `[x]` when complete
 
-## Step 4: Auto-Commit Changes
+## Step 4: Auto Commit Changes
 
 If you have uncommitted changes, Vexorbis can commit them:
 

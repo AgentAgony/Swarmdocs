@@ -9,7 +9,7 @@ Traditional AI coding assistants are powerful but have limitations:
 | Problem | How Vexorbis Solves It |
 |---------|---------------------|
 | LLMs guess at code structure | **HippoRAG** builds AST graphs for precise understanding |
-| Debugging is trial-and-error | **Ochiai SBFL** statistically locates bugs |
+| Debugging is trial and error | **Ochiai SBFL** statistically locates bugs |
 | Git workflows are manual | **Git Agents** automate commits, PRs, and reviews |
 | Context is lost between sessions | **Telemetry Memory** persists insights in SQLite |
 
@@ -30,7 +30,7 @@ Go beyond text search. Use AST analysis, statistical debugging, and formal verif
 Let specialized agents handle git commits, code reviews, and issue triage.
 
 ### 🛡️ The Guardian (Active Governance)
-Stay in control with permission-first workflows and self-healing telemetry.
+Stay in control with permission first workflows and self healing telemetry.
 
 ---
 

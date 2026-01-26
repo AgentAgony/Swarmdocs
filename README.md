@@ -1,6 +1,4 @@
 <div align="center">
-  <img src="/images/favicon-96x96.png" alt="Vexorbis Logo" width="200"/>
-
   ### Build faster with Vexorbis
 
   [![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
@@ -14,13 +12,13 @@
 
 ## 🚀 The Vision
 
-**Vexorbis** is a high-performance squad of specialized AI agents that live inside your IDE. It uses algorithms to find bugs, audit your Git flow, and verify logic before you even hit save. It handles the grunt work so you can focus on building software.
+**Vexorbis** is a high performance squad of specialized AI agents that live inside your IDE. It uses algorithms to find bugs, audit your Git flow, and verify logic before you even hit save. It handles the grunt work so you can focus on building software.
 
 ### Origins & Inspiration
 
-Vexorbis was born from the realization that while LLMs are powerful, they lack the deterministic rigor required for professional software engineering. Inspired by the orchestration patterns of OpenAI's original Swarm research, we've evolved those concepts into a production-ready workforce that combines:
+Vexorbis was born from the realization that while LLMs are powerful, they lack the deterministic rigor required for professional software engineering. Inspired by the orchestration patterns of OpenAI's original Swarm research, we've evolved those concepts into a production ready workforce that combines:
 - **Algorithmic Precision**: AST analysis, formal verification, and statistical debugging.
-- **Autonomous Workflows**: Self-driven Git management and task synchronization.
+- **Autonomous Workflows**: Self driven Git management and task synchronization.
 - **Stateful Memory**: Context that survives across sessions and agents.
 
 ---
