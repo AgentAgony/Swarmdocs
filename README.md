@@ -1,13 +1,13 @@
 <div align="center">
-  ### Build faster with Vexorbis
+
 
   [![Python](https://img.shields.io/badge/Python-3.11+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
   [![Docker](https://img.shields.io/badge/Docker-Ready-2496ED?style=for-the-badge&logo=docker&logoColor=white)](https://docker.com)
   [![MCP](https://img.shields.io/badge/MCP-Compatible-00ADD8?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJMMiA3TDEyIDEyTDIyIDdMMTIgMloiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0yIDEyTDEyIDE3TDIyIDEyIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiLz4KPC9zdmc+)](https://modelcontextprotocol.io)
   [![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
 
-</div>
 
+<div align="center">
 ---
 
 ## 🚀 The Vision
@@ -99,13 +99,5 @@ Everything you need to master the workforce:
 | | | [Custom Tools](guides/custom-tools.md) | [FAQ](reference/troubleshooting.md) |
 
 ---
+</div>
 
-## 🤝 Build with Us
-
-Check out the [Contributor Guide](CONTRIBUTING.md).
-
----
-
-## 📜 License
-
-Vexorbis is MIT Licensed. Build something cool.
