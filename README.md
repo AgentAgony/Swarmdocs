@@ -8,7 +8,8 @@
 
 
 <div align="center">
----
+  
+
 
 ## 🚀 The Vision
 
@@ -21,7 +22,7 @@ Vexorbis was born from the realization that while LLMs are powerful, they lack t
 - **Autonomous Workflows**: Self driven Git management and task synchronization.
 - **Stateful Memory**: Context that survives across sessions and agents.
 
----
+
 
 ## 🏗️ Core Architecture
 
@@ -54,15 +55,12 @@ graph TD
     Orchestrator --> Workers
 ```
 
----
-
 ## 🧠 The Three Pillars
 
 1.  **Algorithmic Core**: We use deterministic algorithms (HippoRAG, Ochiai SBFL, Z3) to ensure that agent actions are grounded in codebase reality, not just probabilistic guesses.
 2.  **Autonomous Workforce**: Specialized Git roles (Auditor, Scout, Triage) handle mundane project management and code quality tasks autonomously.
 3.  **Active Governance**: Every action is audited via a Telemetry system. Self-healing loops detect and mitigate repeated failures automatically.
 
----
 
 ## 🤖 Specialized Workforce
 
@@ -75,8 +73,6 @@ Vexorbis assigns roles based on the task at hand. You can trigger them directly 
 | **Issue Triage** | `issue_triage_needed=True` | Analyzes backlog, suggests priorities, and applies labels. |
 | **Branch Manager** | `git_create_pr=True` | Handles PR creation, merge conflicts, and branch hygiene. |
 
----
-
 ## ⚡ Get Moving
 
 Getting set up takes less time than a coffee break.
@@ -84,8 +80,6 @@ Getting set up takes less time than a coffee break.
 1.  **[Lock In](./getting-started/installation.md)** — Grab the Docker image and get running.
 2.  **[First Ship](./getting-started/quickstart.md)** — Run your first autonomous task and see the magic.
 3.  **[Sync Your Editor](./getting-started/installation.md#ide-configuration)** — Support for Antigravity, Cursor, and Claude Desktop.
-
----
 
 ## 📖 The Deep Dive
 
